@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-image: url("/bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+.container {
+  width: 80vw;
+  height: 90vh;
+  background: rgba(43, 16, 117, 0.753);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+}
+.loading {
+  padding: 50px;
+  font-style: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+}
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* تخصيص المسار لشريط التمرير */
+::-webkit-scrollbar-track {
+  background: rgba(17, 25, 40, 0.1); /* لون خلفية المسار */
+  border-radius: 10px; /* حواف منحنية للمسار */
+}
+
+/* تخصيص مقبض شريط التمرير */
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 25, 40, 0.5); /* لون المقبض */
+  border-radius: 10px; /* حواف منحنية للمقبض */
+}
+
+/* تخصيص مقبض شريط التمرير عند التحويم */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(17, 25, 40, 0.7); /* لون المقبض عند التحويم */
+}
+
+/* تخصيص الزوايا لشريط التمرير */
+::-webkit-scrollbar-corner {
+  background: rgba(17, 25, 40, 0.5); /* لون الزوايا */
+}
